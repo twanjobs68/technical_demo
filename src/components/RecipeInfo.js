@@ -18,7 +18,7 @@ class recipeInfo extends Component {
                 <h3>{this.state.title}</h3>
                 <h3>{this.state.date}</h3>
                 <br></br>
-                <p>{this.state.ingredients}</p>
+                      <p>{this.state.ingredients}</p>
                 <br></br>
                 
             </div>

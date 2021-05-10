@@ -9,11 +9,16 @@ class SearchRecipes extends Component {
      event.preventDefault(); {/* so doesn't refresh and wipe out input*/}
      console.log("Entering search word")
 
-     const query = "chicken"
+     const query = () => {
+
+        const APP_ID = "527f533d"
+        const APP_KIEY = "c5ce787be159504e33d23bb6cbc3b5fd"
 
   
     // VARIABLE FOR OUR URL TO LIVE IN */}
- const url = "https://api.edamam.com/search?q=chicken&app_id=${527f533d}&app_key=c5ce787be159504e33d23bb6cbc3b5fd&language=en-US&query=${query}&page=1&include_adult=false"
+ 
+ const url = "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free"
+
 
  // const url = `https://api.themoviedb.org/3/search/movie?api_key=f5f61add57f604cf9812445951da0a6c&language=en-US&query=${query}&page=1&include_adult=false`
     // use await to wait for a response to tell our function to wait for data(url) and turn data to json data
